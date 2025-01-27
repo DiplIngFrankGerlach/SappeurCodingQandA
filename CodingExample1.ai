@@ -1,0 +1,12 @@
+
+//Method for Checking a String for being a base 10 number
+int Main::IsNumber(&String_16 str)
+{
+   for(var int i=0; i < str.length(); i++)
+   {
+      var char c = str.getAt(i);
+      if(str.isNumberChar(c) != 1)
+      { return 0; }
+   }
+   return 1;
+}
